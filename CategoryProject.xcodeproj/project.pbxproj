@@ -14,6 +14,7 @@
 		54893B761B131EFC00F49D2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54893B751B131EFC00F49D2B /* Images.xcassets */; };
 		54893B791B131EFC00F49D2B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54893B771B131EFC00F49D2B /* LaunchScreen.xib */; };
 		54893B851B131EFC00F49D2B /* CategoryProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54893B841B131EFC00F49D2B /* CategoryProjectTests.m */; };
+		54893B951B13234500F49D2B /* UIView+CDViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 54893B941B13234500F49D2B /* UIView+CDViewCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		54893B7E1B131EFC00F49D2B /* CategoryProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoryProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54893B831B131EFC00F49D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54893B841B131EFC00F49D2B /* CategoryProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryProjectTests.m; sourceTree = "<group>"; };
+		54893B931B13234500F49D2B /* UIView+CDViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CDViewCategory.h"; sourceTree = "<group>"; };
+		54893B941B13234500F49D2B /* UIView+CDViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDViewCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		54893B671B131EFC00F49D2B /* CategoryProject */ = {
 			isa = PBXGroup;
 			children = (
+				54893B921B13232800F49D2B /* Class */,
 				54893B6C1B131EFC00F49D2B /* AppDelegate.h */,
 				54893B6D1B131EFC00F49D2B /* AppDelegate.m */,
 				54893B6F1B131EFC00F49D2B /* ViewController.h */,
@@ -117,6 +121,15 @@
 				54893B831B131EFC00F49D2B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54893B921B13232800F49D2B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				54893B931B13234500F49D2B /* UIView+CDViewCategory.h */,
+				54893B941B13234500F49D2B /* UIView+CDViewCategory.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				54893B711B131EFC00F49D2B /* ViewController.m in Sources */,
 				54893B6E1B131EFC00F49D2B /* AppDelegate.m in Sources */,
+				54893B951B13234500F49D2B /* UIView+CDViewCategory.m in Sources */,
 				54893B6B1B131EFC00F49D2B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,9 +361,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: di chen (6TW6JE3W2H)";
 				INFOPLIST_FILE = CategoryProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8c676db7-6d5f-47f7-a401-8b2efb6ee4f8";
 			};
 			name = Debug;
 		};
@@ -357,9 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: di chen (6TW6JE3W2H)";
 				INFOPLIST_FILE = CategoryProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8c676db7-6d5f-47f7-a401-8b2efb6ee4f8";
 			};
 			name = Release;
 		};
@@ -416,6 +438,7 @@
 				54893B8A1B131EFC00F49D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54893B8B1B131EFC00F49D2B /* Build configuration list for PBXNativeTarget "CategoryProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +447,7 @@
 				54893B8D1B131EFC00F49D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
