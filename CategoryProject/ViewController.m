@@ -17,6 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIButton *button = [[UIButton alloc] init];
+    button.backgroundColor = [UIColor yellowColor];
+    [button setTitle:@"cocoaPods Test" forState:UIControlStateNormal];
+    [self.view addSubview:button];
+    
+    [button makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(@100);
+        make.left.equalTo(self.view.left).offset(100);
+        make.right.equalTo(self.view.right).offset(-100);
+        make.bottom.equalTo(self.view.mas_bottom).offset(-100);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
